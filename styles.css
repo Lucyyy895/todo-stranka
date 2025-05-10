@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DM+Serif+Text:ital@0;1&family=Handlee&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemon&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #B3D8A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #3D8D7A;
+    border-radius: 40px;
+    padding: 90px;
+    text-align: center;
+    background-color: #A3D1C6;   
+}
+h1 {
+    margin-bottom: 30px;
+    color: #000000;
+    font-family: "Handlee", serif;
+    font-weight: 2000;
+    font-style: normal;
+    font-size: 40px;
+}
+#pridat, #zmazat {
+    background-color: #FBFFE4;
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px solid #3D8D7A;
+    cursor: pointer;
+    font-family: 'Inria Serif', serif;
+}
+#pridat:hover {
+    background-color: #B3D8A8;
+}
+input[type="text"] {
+    background-color: #FBFFE4;
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px solid #3D8D7A;
+    font-family: 'Inria Serif', serif;
+}
+ul {
+    margin-top: 20px;
+    max-width: 300px;
+    overflow-y: auto;
+    max-height: 200px;
+    height: auto;
+    scrollbar-color:  #3D8D7A #B3D8A8;
+}
+li {
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    word-break: break-word;
+    margin-bottom: 7px;
+}
+li input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+li button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+.text {
+    flex: 1;
+    word-break: break-word;
+    margin: 0 10px;
+}
+#zmazat {
+    margin-top: 5px;
+    background-color: #e97b7b;
+}
+#zmazat:hover {
+    background-color: #e45d5d;
+}
