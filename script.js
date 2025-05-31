@@ -14,7 +14,8 @@ function pridat() {
 };
 function zmazat(button) {
     const li = button.parentElement;
-    todos = todos.filter(el => el !== li);
+    const text = li.querySelector(".text").textContent;
+    todos = todos.filter(el => el !== text); 
     li.remove();
     ulozenie();
 };
